@@ -19,11 +19,13 @@ body {
 }
 
 .container {
+
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+
 }
 
 form input, form label, form button {
@@ -56,3 +58,33 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 5px;
+}
+
+td {
+ 
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+}
+
+.cabecalho{
+  font-weight: bold;
+  background-color: rgb(182, 180, 180);
+}
+
+h3{
+  width: 100%;
+  background-color: rgb(182, 180, 180);
+  text-align: center;
+  font-size: 20px;
+}
+
+p{
+  font-weight: bold;
+  margin: 0;
+}
+
