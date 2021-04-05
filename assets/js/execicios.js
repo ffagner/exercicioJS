@@ -4,12 +4,19 @@
 function choose(num1, num2){
     num1 > num2 ? console.log(`${num1} é maior que ${num2}`) : console.log(`${num2} é maior que ${num1}`)
 }
-choose(10,11)
+// choose(10,11)
 
+function choose2 (num1, num2){
+    if (num1 > num2) return num1
+    else return num2
+}
+console.log(choose2(10,20))
 //Exercício 02
 //Escreva uma função chamada ePaisagem que receba dois argumentos largura e altura de uma imagem e devolva verdadeiro ou falso caso ela esta no modo paisagem, ou seja, se: 
 //altura > largura = false
 //altura < largura = true
+
+
 
 //Exercício 03
 //escreva uma função que retorne o segunte:
