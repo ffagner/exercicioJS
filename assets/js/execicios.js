@@ -17,11 +17,11 @@
 //altura > largura = false
 //altura < largura = true
 
-function ePaisagem(largura, altura){
-    if (largura > altura) return true
-    else return false
-}
-console.log(ePaisagem(1080, 1920))
+// function ePaisagem(largura, altura){
+//     if (largura > altura) return true
+//     else return false
+// }
+// console.log(ePaisagem(1080, 1920))
 
 //Exercício 03
 //escreva uma função que retorne o segunte:
@@ -31,3 +31,19 @@ console.log(ePaisagem(1080, 1920))
 //numero NÃO É divisível por 3 e 5 = retornar o proprio numero
 //checar se o caracter é realmente um numero
 // usar rage de 0 a 100 
+
+function FizzBuzz(num){
+    if(Number.isNaN(num)) {
+        return 'não é um número'
+    } else{
+        if (num % 5 === 0 && num % 3 === 0) return 'FizzBuzz'
+        if (num % 5 === 0) return 'Buzz'
+        if (num %  3 === 0) return 'Fizz'
+        else return num;
+    }  
+}
+
+for(let i = 1; i < 100; i++){
+    console.log(FizzBuzz(i))
+}
+
