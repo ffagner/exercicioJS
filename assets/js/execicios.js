@@ -1,6 +1,11 @@
 //Exercício 01
 // escreva uma função que receba dois números e retorne o maior deles;
 
+function choose(num1, num2){
+    num1 > num2 ? console.log(`${num1} é maior que ${num2}`) : console.log(`${num2} é maior que ${num1}`)
+}
+choose(10,11)
+
 //Exercício 02
 //Escreva uma função chamada ePaisagem que receba dois argumentos largura e altura de uma imagem e devolva verdadeiro ou falso caso ela esta no modo paisagem, ou seja, se: 
 //altura > largura = false
