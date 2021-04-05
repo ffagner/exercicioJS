@@ -1,1 +1,1 @@
-# exercicioJS
+# Exercícios em JavaScript do curso Curso de JavaScript e TypeScript do básico ao avançado 2021 

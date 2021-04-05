@@ -2,23 +2,19 @@ function calImc() {
 
   let form = document.querySelector(".dados");
   let resul = document.querySelector(".resultado");
-  let tabela = document.querySelector(".tabela");
 
   function capData(evento) {
     evento.preventDefault();
-    window.location.reload()
 
     let weight = document.querySelector(".weight");
     let height = document.querySelector(".height");
     weight = parseFloat(weight.value);
     height = parseFloat(height.value);
     // formula de calculo do IMC: peso/altura*altura
-    let cal = (w, h) => {
-      return w / h ** 2;
-    };
+    let cal = (w, h) => {return w / h ** 2};
     cal = cal(weight, height).toFixed(2);
     let valor = parseFloat(cal);
-    
+   
     function determinar (val) {
         if(val < 18.50){
         const row1 = document.getElementById('nivel1')
