@@ -140,3 +140,7 @@ p{
     cursor: pointer;
     border-radius: 5px; 
 }
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}

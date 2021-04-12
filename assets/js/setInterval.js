@@ -1,7 +1,7 @@
 //setInterval e setTimeout
 // função retorna a hora atual no formato br 00:00:00
 function hours(){
-    let data = new Date()
+    let data = new Date(00-00-00)
     return data.toLocaleTimeString('pt-br', {hour12:false}) // formatar a string para o formato de hora brasileiro
 }
 
@@ -13,6 +13,6 @@ setTimeout(() => {
     clearInterval(timer)
 }, 5000);
 
-setTimeout(() => {
-    console.log('fim do tempo')
-}, 5000);
+// setTimeout(() => {
+//     console.log('fim do tempo')
+// }, 2000);

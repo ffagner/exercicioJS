@@ -1,5 +1,3 @@
-try {
-//     console.log(test) 
-// }catch(err){
-//     console.log('erro de definição de variavel')
-// }
+setTimeout(() => {
+//     console.log('fim do tempo')
+// }, 2000);
