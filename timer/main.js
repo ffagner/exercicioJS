@@ -1,14 +1,3 @@
-const relogio = document.querySelector('.time')
-const btInit = document.querySelector('#iniciar')
-const btPause = document.querySelector('#pausar')
-const btZero = document.querySelector('#zerar')
-let tSeg = 1
-let tMin = 0
-let tHour = 0
-let status = null
-let estado = true
-let intervalo = 1000
-
 let secund = () => {
     let s = tSeg++
     let m = tMin
@@ -32,7 +21,19 @@ let secund = () => {
     } 
     return [h.toString(), m.toString(),s.toString()]
 }
+const relogio = document.querySelector('.time')
+const btInit = document.querySelector('#iniciar')
+const btPause = document.querySelector('#pausar')
+const btZero = document.querySelector('#zerar')
+let tSeg = 1
+let tMin = 0
+let tHour = 0
+let status = null
+let estado = true
+let intervalo = 1000
+
 function htmlTime(timer){
+    
     relogio.style.color = "rgb(17, 86, 102)"
     relogio.innerHTML = `${timer[0]}:${timer[1]}:${timer[2]}`
 }
@@ -42,11 +43,11 @@ let myTime = () => {
     status = setInterval(() => htmlTime(secund()), intervalo)
 }
 btInit.addEventListener('click', (e) => {
-    if(estado) myTime()
+    clearInterval(status)
+    myTime()
 
 })
 btZero.addEventListener('click', (e) => {
-    estado = true
     clearInterval(status)
     tHour = 0
     tMin = 0
@@ -55,7 +56,6 @@ btZero.addEventListener('click', (e) => {
     relogio.style.color = "red"   
 })
 btPause.addEventListener('click', (e) => {
-    estado = true
     relogio.style.color = "red"
     clearInterval(status)
 })

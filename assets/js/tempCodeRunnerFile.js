@@ -1,3 +1,2 @@
-setTimeout(() => {
-//     console.log('fim do tempo')
-// }, 2000);
+var strict = (function() { return this; }());
+console.log(strict)
